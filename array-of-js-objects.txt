@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array of javascript objects..</title>
+</head>
+<body>
+
+</body>
+<script>
+	var emp=function(name,sal){
+		this.empname=name;
+		this.salary=sal;
+		this.getAnnual=function(){
+			return this.salary*12;
+		}
+	};
+	var array=[];
+	array[0]=new emp("ujjaval",9000);
+	array[1]=new emp("ashish",8000);
+	array[2]=new emp("sourabh",7500);
+    array[3]=new emp("mayank",4000);
+
+    for(i=0;i<array.length;i++){
+    	alert(array[i].empname+"earn salary of rupess"+array[i].getAnnual().toString());
+    }
+
+</script>
+</html>

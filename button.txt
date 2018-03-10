@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button..</title>
+</head>
+<body>
+<input type="button" name="" id="clickMe" onclick="doFunction()" value="button">
+</body>
+<script>
+	function doFunction(){
+		document.getElementById('clickMe').innerHTML=doFunction;
+		alert("hello"); 
+	}
+	
+</script>
+</html>

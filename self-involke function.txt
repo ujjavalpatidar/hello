@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>functions advanced</title>
+</head>
+<body>
+
+</body>
+<script>
+	(function(){
+		 alert("hello ujjaval");
+			})();
+
+    (function(a,b){
+    	alert("the sum is=" +(a+b));
+
+    })(10,20);
+
+    (function(){
+    	var s=0;
+    	for(i=0;i<arguments.length;i++){
+    		s+=arguments[i];
+    	}
+    	alert("Total sum is=" +s);
+    })(10,50,80,40);
+
+    alert((function(a,b){
+    var c=0;
+    c=a+b;
+    return c;	
+    })(10,5));
+</script>
+</html>

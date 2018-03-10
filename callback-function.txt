@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>callback fuction in javascript</title>
+</head>
+<body>
+<button onclick="Doprocess(10,20,myFun)">click</button>
+</body>
+<script>
+	function Doprocess(a,b,dolater){
+		dolater(a,b);
+		alert("sum =" +(a+b));
+	}
+
+	function myFun(p,q){
+	   alert("diff is"+(p+q));
+
+	}
+</script>
+</html>

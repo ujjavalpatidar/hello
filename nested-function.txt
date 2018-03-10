@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested functions</title>
+</head>
+<body>
+<button onclick="DoProcess(40,50)">SHOW</button>
+</body>
+<script>
+	function DoProcess(a,b){
+
+		function Sum(){    //child function ko arguments provide karne ki jarurat ni hai...parent function se a,b ki        value          inherte kr lega child function Sum() and Diff() 
+			alert("sum="+(a+b));
+		}
+		function Diff(){
+			alert("diff="+(a-b));
+		}
+		Sum();
+		Diff();
+	}
+	DoProcess(10,50);
+</script>
+</html>

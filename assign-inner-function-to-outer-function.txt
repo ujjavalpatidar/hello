@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>assign inner to outer function ..</title>
+	<mark>annonomas function hamesha execute hoga bar bar ek bar child function run hone ke ...because wo pahla function hai jo uske baad execute hua hai</mark>
+</head>
+<body>
+
+</body>
+<script>
+	function DoProcess(a,b){ //outer function ya parent function jise inner function ko assign karna hai
+		 
+		 function Sum(){
+		     alert("sum="+(a+b));
+
+	}  Sum();
+
+	  DoProcess=function(){  //inner function...isko outer function ko assign kiya hai DoProcess name use krke
+	  	                      //annonomas function hai kyuki iska koi nam nahi hai
+	  	alert("diff="+(a-b));
+	  }
+
+}
+DoProcess(10,20);
+DoProcess(50,40);
+DoProcess(50,5);
+DoProcess(77,88);
+</script>
+</html>

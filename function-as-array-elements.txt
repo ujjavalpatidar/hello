@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>function as array elements</title>
+</head>
+<body>
+
+</body>
+<script>
+	var arr=[];
+	arr[0]=function(){
+		alert("first");
+	};
+	arr[1]=function(){
+		alert("second");
+	};
+	arr[2]=function(){
+		alert("third");
+	};
+	arr[3]=function(){
+		alert("fourth");
+	};
+	for(i=0;i<arr.length;i++){
+		var f=arr[i];
+		f();
+
+	//	arr[i]();  //ese bhi execute kr skte hai...
+	}
+
+</script>
+</html>

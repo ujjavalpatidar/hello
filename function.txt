@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fuctions</title>
+</head>
+<body>
+<button onclick="f()">show msg</button>
+<button onclick="showSum(10,10)">show sum</button>
+<button onclick="showSum2(10,20,30,40,50,60)">total sum</button>
+<button onclick="alert(showDif(55,5))">show difference</button>
+</body>
+<script>
+	function showMsg(){
+		alert("hello");
+	}
+	var f=showMsg;
+	f();
+
+	function showSum(a,b) {
+		alert(a+b);
+	}
+
+
+	function showSum2(){
+		var s=0;
+		for(i=0;i<arguments.length;i++){
+		  s+=arguments[i];
+		}
+		alert("total sum=" +s);
+	}
+
+	function showDif(a,b){
+		var c=0;
+		c=a-b;
+		return c;
+      
+	}
+	showDif(20,5);
+
+
+	
+
+
+</script>
+</html>

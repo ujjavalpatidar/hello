@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects in javascript</title>
+</head>
+<body>
+
+</body>
+<script>
+	var arr={
+         empno:100,
+         empid:10,
+         empname:"ujjaval",
+         sal:10000,
+        };
+
+        var result="";
+        for(var i in arr){
+        	result +=i +"="+arr[i]+"\n"; 
+       }
+        alert(result);
+
+        //alert(arr["empno"] +","+
+        //      arr["empid"]+","+
+        //       arr["empname"]+","+
+        //      arr["sal"]+","   );
+
+        //alert(arr.empno+","+ arr.empid +","+ arr.empname +","+ arr.sal +",");
+       
+</script>
+</html>
