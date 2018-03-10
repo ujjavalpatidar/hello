@@ -1,0 +1,29 @@
+<h2>JavaScript Object Constructors</h2>
+
+<p id="demo"></p>
+<P>constructor function ka use jab ek se jyada object same type ke create krna ho tab hota hai </P>
+<mark>this ek keyword hota hai jiski value change nahi kar sakte...varible nahi hai</mark>
+
+
+<script>
+
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+
+// Create two Person objects
+var myFather = new Person("John", "Doe", 50, "blue");
+var myMother = new Person("Sally", "Rally", 48, "green");
+
+// Display age
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
+
+</script>
+
+</body>
+</html>
