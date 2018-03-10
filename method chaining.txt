@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>method chaining...</title>
+</head>
+<body>
+
+</body>
+<script>
+	var Emp=function(name,sal){
+		this.Empname=name;
+		this.salary=sal;
+		this.AnnSalary=function(Incr){
+			this.salary+=Incr;
+			return this;
+		}
+	};
+	var object=new Emp("ujjaval",7000);
+	alert(object.salary);
+	alert(object.AnnSalary(500).AnnSalary(500).salary);
+</script>
+</html>
